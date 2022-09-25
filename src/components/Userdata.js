@@ -41,7 +41,8 @@ const Userdata = () => {
       .then((data) => {
         if (data) {
           setData(data);
-          // console.log(data.data.email);
+          // console.log(data);
+          // window.alert(`${data.data.email}`)
           // console.log(data.data.first_name);
           // console.log(data.data.last_name);
           // {(userName>12) ? alert("value cant be greater than 12"):}
@@ -67,11 +68,9 @@ const Userdata = () => {
           <button className="btn">Search</button>
         </form>
 
-        {/* <Displaydata data={adata} ></Displaydata> */}
+        <Displaydata data={adata} ></Displaydata>
       </div>
-{
-  <p>{adata.data}</p>
-}
+
 
       
       

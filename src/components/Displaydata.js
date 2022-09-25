@@ -10,19 +10,29 @@ function Displaydata({ data }) {
 <Routes>
   <Route path="/"></Route>
   <Route path="/img" element={
-    <p>img</p>
+    <img 
+    src={data.data.avatar}
+     alt="Img" />
     
   }></Route>
   <Route path="/name" element={
-    <p>name</p>
+   <p><strong>Name: </strong>
+   {data.data.first_name}{" "}{data.data.last_name}
+ </p>
     
   }></Route>
   <Route path="/email" element={
-    <p>Email</p>
+    <span><strong>Email:</strong>
+    {data.data.email}
+    </span>
     
   }></Route>
   <Route path="/description" element={
-    <p>Description</p>
+   <p><strong>Description :</strong>
+   <span className="fdata"> 
+   {data.support.text}
+   </span>
+      </p>
     
   }></Route>
   <Route path="/name"></Route>
@@ -39,19 +49,19 @@ function Displaydata({ data }) {
         <NavLink to="/email" className="nav_link">Email</NavLink>
         <NavLink to="/description" className="nav_link">Description</NavLink>
       </div>
-      <div className="img">
+      <div className="img" key={data.data.id}>
         <img 
         src={data.data.avatar}
          alt="Img" />
       </div>
       <div className="name">
-        <h3>Name: 
-          {data.data.first_name}
-        </h3>
-        <span>Email:
+        <p><strong>Name: </strong>
+          {data.data.first_name}{" "}{data.data.last_name}
+        </p>
+        <span><strong>Email:</strong>
            {data.data.email}
            </span>
-        <p>Description :
+        <p><strong>Description :</strong>
         <span className="fdata"> 
         {data.support.text}
         </span>
