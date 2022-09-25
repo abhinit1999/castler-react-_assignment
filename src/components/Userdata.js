@@ -68,7 +68,7 @@ const Userdata = () => {
           <button className="btn">Search</button>
         </form>
 
-        <Displaydata data={adata} ></Displaydata>
+        {/* <Displaydata data={adata} ></Displaydata> */}
       </div>
 
 
