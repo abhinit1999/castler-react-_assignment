@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/castler-react-_assignment/static/css/main.c2c2f6e3.css",
+    "main.js": "/castler-react-_assignment/static/js/main.2dd46f7a.js",
+    "index.html": "/castler-react-_assignment/index.html",
+    "main.c2c2f6e3.css.map": "/castler-react-_assignment/static/css/main.c2c2f6e3.css.map",
+    "main.2dd46f7a.js.map": "/castler-react-_assignment/static/js/main.2dd46f7a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c2c2f6e3.css",
+    "static/js/main.2dd46f7a.js"
+  ]
+}
